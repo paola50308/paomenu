@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body> 
+<h1>llenando el vector</h1>
+  <script>
+var salario=new Array (5);
+var aumento=new Array (5);
+var aumento35=new Array (5);
+//llenar el vector
+var x=0;//Inicializando
+while(x<salario.length)//Comprobar
+{
+salario[x]=parseFloat(prompt("Ingrese un salario mayor a 365 : "));
+while(salario[x]>=365){
+    aumento[x]=salario[x]*1.20;
+    aumento35[x]=salario[x]*1.35
+    x++;//actualizando
+
+}
+//actualizando
+
+}
+
+//fin while
+//mostar el contenido de los arreglos
+var j=0;//inicializar
+
+document.write("SALARIO_____________________________________AUMENTO_________________________________AUMENTO 35%<br>")
+
+while(j<salario.length)
+{
+
+document.write(salario[j]+"____________________________________________"+aumento[j].toFixed(2)+"_______________________________________"+aumento35[j].toFixed(2)+"<br>");
+document.write("<br><br>");
+    j++;
+}
+
+    </script>
+    
+</body>
+</html

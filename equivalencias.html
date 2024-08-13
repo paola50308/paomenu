@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body bgcolor="pink">
+   <CENTER><h1> TABLA DE EQUIVALENCIAS</h1></CENTER>
+  
+    <script>
+
+        var dolares=new Array(6);
+        var BTC =new Array(6);
+        var ETH =new Array(6);
+        var x=0;
+      while (x<6)
+    {
+       dolares[x]=parseFloat(prompt("ingrese la cantidad de dolares"));
+       BTC[x]=dolares[x]/57,810
+       ETH[x]=dolares[x]/3.62
+
+       x++;
+    }
+        var j=0;
+    document.write("DOLARES_______________________________BTC________________________________________ETH");
+
+
+
+    while (j < dolares.length) {
+            document.write(dolares[j]+"_____________________________________"+BTC[j].toFixed(2)+"_____________________________________"+ETH[j].toFixed(2)+"<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+
+    
+        j++;
+    }
+
+    </script>
+</body>
+</html>
+
